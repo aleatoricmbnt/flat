@@ -1,5 +1,5 @@
 resource "null_resource" "base" {
-  triggers {
+  triggers = {
     time = timestamp()
   }
 }
