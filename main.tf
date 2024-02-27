@@ -1,5 +1,7 @@
-resource "null_resource" "base" {
-  triggers = {
-    time = timestamp()
-  }
+resource "" "name"{
+  
+}
+
+resource "" "name"{
+  
 }
