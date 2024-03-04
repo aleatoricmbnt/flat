@@ -4,3 +4,5 @@ resource "null_resource" "name" {
     always_run = timestamp()
   }
 }
+
+#other comment
