@@ -1,5 +1,5 @@
 resource "null_resource" "example" {
-  count = 2000
+  count = 500
   triggers = {
     time = timestamp()
     some = var.my-var
