@@ -1,9 +1,11 @@
 resource "null_resource" "example" {
+  count = 200
   triggers = {
     time = timestamp()
+    some = var.my-var
   }
 }
 
-#comment1
-#comment2
-#comment3
+variable "my-var" {
+  default = "string"
+}
