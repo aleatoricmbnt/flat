@@ -6,3 +6,4 @@ resource "null_resource" "example" {
 
 #comment1
 #comment2
+#comment3
