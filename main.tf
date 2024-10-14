@@ -1,5 +1,5 @@
-resource "null_resource" "example" {
-  triggers = {
-    time = timestamp()
-  }
-}
+#resource "null_resource" "example" {
+#  triggers = {
+#    time = timestamp()
+#  }
+#}
