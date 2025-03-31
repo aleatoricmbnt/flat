@@ -7,5 +7,5 @@ variable "list_untyped" {
 }
 
 variable "tag_name" {
-  default = "duplicated_0-0-2"
+  default = "duplicated_0-0-3"
 }
