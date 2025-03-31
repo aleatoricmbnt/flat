@@ -1,11 +1,18 @@
-resource "terraform_data" "list_untyped_nested_object" {
-  triggers_replace  = [ var.list_untyped, var.tag_name ]
+resource "terraform_data" "multiple_triggers" {
+  triggers_replace  = [ var.list_of_tags, var.nested_object ]
 }
 
-variable "list_untyped" {
-  default = "string"
+variable "list_of_tags" {
+  default = {
+    "tag.with.dot" = "s:://"
+    "slash/suffix" = "f"
+  }
 }
 
-variable "tag_name" {
-  default = "duplicated_0-0-3"
+variable "nested_object" {
+  default = {
+    upper_level = {
+      "smth.w.dot.and.hash#" = 123
+    }
+  }
 }
