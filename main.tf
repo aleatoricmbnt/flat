@@ -17,6 +17,15 @@
 #   }
 # }
 
+terraform {
+  required_providers {
+    scalr = {
+      source  = "registry.scalr.io/scalr/scalr"
+      version = "2.5.0"
+    }
+  }
+}
+
 resource "scalr_workspace" "cli-driven" {
   name           = "created_automatically"
   environment_id = "env-v0ns0m539r05815rg"
