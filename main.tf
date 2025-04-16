@@ -17,6 +17,6 @@ variable "nested_object" {
   }
 }
 
-resource "terraform_data" "tag_1_0_1" {
+resource "terraform_data" "tag_1_0_0" {
   triggers_replace = timestamp()
 }
