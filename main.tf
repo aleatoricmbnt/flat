@@ -16,3 +16,9 @@ variable "nested_object" {
     }
   }
 }
+
+resource "terraform_data" "replacement" {
+  input = var.input
+}
+
+variable "input" {}
