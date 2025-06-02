@@ -3,5 +3,5 @@ resource "terraform_data" "this" {
 }
 
 resource "terraform_data" "static" {
-  
+  input = "target_branch"
 }
