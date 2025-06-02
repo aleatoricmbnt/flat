@@ -7,3 +7,4 @@ resource "terraform_data" "static" {
 }
 
 #comment_to_create_base_pr
+#comment_to_trigger_VCS_run
