@@ -7,7 +7,3 @@ resource "terraform_data" "this" {
 variable "number_of_entities" {
   default = 1
 }
-
-module "external" {
-  source = "../terraform-aws-create_subdomain"
-}
