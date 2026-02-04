@@ -1,9 +1,3 @@
-resource "terraform_data" "this" {
-  count = var.number_of_entities
-  triggers_replace = timestamp()
-  input = "static_master"
-}
-
-variable "number_of_entities" {
-  default = 1
+module "symlink_test" {
+  source = "git::https://github.com/aleatoricmbnt/base.git//config_tests/symlink_tfvars?ref=master"
 }
